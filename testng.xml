@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuit">
+    <listeners>
+        <listener class-name="com.api.dummy.utilities.Listeners"></listener>
+    </listeners>
+    <test thread-count="5" name="test">
+        <classes>
+            <class name="com.api.dummy.testCases.TC001_Get_Single_Employee"/>
+            <class name="com.api.dummy.testCases.TC002_Create_Employee"/>
+        </classes>
+    </test>
+</suite>
